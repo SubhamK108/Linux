@@ -1,0 +1,59 @@
+Intel Drivers
+
+Use Internet amd download the Intel Graphics Software for Linux
+
+
+
+Nvidia Drivers
+
+Automatic Install using standard Ubuntu Repository...
+
+$ ubuntu-drivers devices
+$ sudo ubuntu-drivers autoinstall or $ sudo apt install nvidia-340
+
+
+Automatic Install using PPA repository to install Nvidia Beta drivers...
+
+$ sudo add-apt-repository ppa:graphics-drivers/ppa
+$ sudo apt update
+$ ubuntu-drivers devices
+$ sudo ubuntu-drivers autoinstall or $ sudo apt install nvidia-410
+
+
+
+
+
+Audio/Video Codecs
+
+$ sudo apt update
+$ sudo apt install libdvdnav4 libdvdread4 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg
+$ sudo apt install ubuntu-restricted-extras
+$ sudo apt update
+
+
+
+
+Synaptic Package Manager
+
+$ sudo apt install synaptic
+
+
+
+
+
+Uninstall GNU-Grub via Windows (After Uninstalling/Deleting Linux Distro)
+
+diskpart
+list disk
+sel disk 'x' (x = C: Drive)
+list part
+sel part 'y' (y = Partition-"System" 100MB)
+assign letter=Z
+exit
+Z:
+dir
+cd efi
+dir (You will see the Linux Distro Name like "Ubuntu" among the folders)
+rd Ubuntu /s /q
+dir (For confirmation)
+exit
