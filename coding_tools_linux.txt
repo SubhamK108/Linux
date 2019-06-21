@@ -1,0 +1,53 @@
+Installing Packages of various Programming Languages in Ubuntu Based Linux Distributions:
+
+
+# For System Update: sudo apt update && sudo apt upgrade
+# For Installing: sudo apt install <package_name>
+# For Upgrading: sudo apt upgrade <package_name>
+# For Uninstalling: sudo apt purge <package_name> && sudo apt remove <package_name>
+
+
+1. Python3:
+    $ sudo apt install python3
+    $ sudo apt install python3-pip
+
+    For Version Info:
+	$ python3 --version
+    
+    Installing Packages via Pip:
+        $ python3 -m pip install pip
+	$ python3 -m pip install pylint rope
+
+    Upgrading Packages via Pip:
+	$ python3 -m pip install --upgrade pip
+	$ python3 -m pip install --upgrade pylint rope
+
+
+2. GCC - G++ (C / C++):
+    $ sudo apt install gcc g++
+
+    For Version Info:
+	$ gcc --version
+	$ g++ --version
+
+
+3. JAVA:
+    $ sudo add-apt-repository ppa:linuxuprising/java
+    $ sudo apt update && sudo apt upgrade
+    $ sudo apt install oracle-java11-installer
+    $ sudo apt install oracle-java11-set-default
+	(For other versions such as JAVA-12, just replace '...java11' by '...java12')
+
+    For Version Info:
+	$ java --version
+
+
+4. Node.js:
+    $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+	(For other versions such as Node.js-12, just replace '.../setup_10.x' by '.../setup_12.x')
+    $ sudo apt update && sudo apt upgrade
+    $ sudo apt install nodejs
+
+    For Version Info:
+	$ nodejs --version
+	$ npm --version
