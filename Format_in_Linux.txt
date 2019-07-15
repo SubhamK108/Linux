@@ -1,0 +1,11 @@
+HOW TO FORMAT USB IN UBUNTU - LINUX:
+
+1. Open GParted.
+2. Select Drive.
+3. Right click -> Unmount.
+4. Partition -> Delete -> Apply.
+5. GParted -> Refresh.
+6. Device -> Create Partition Table -> 'msdos' -> Apply.
+7. Partition -> New -> File System: 'ntfs', Label: 'xyz' -> Add -> Apply.
+8. Close GParted.
+9. Eject USB.
