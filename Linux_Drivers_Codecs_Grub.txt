@@ -1,6 +1,8 @@
-Intel Drivers
+Intel and AMD Drivers
 
-Use Internet amd download the Intel Graphics Software for Linux
+Just do a system upgrade by:
+$ sudo apt update && sudo apt upgrade
+$ sudo apt full-upgrade
 
 
 
